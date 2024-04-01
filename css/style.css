@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bg-body : #1f212c;
+    --primary-color : #2c5bdd;
+    --fontSize-title : 40px;
+    --fontSize-parrafor : 20px;
+}
+body{
+    background: var(--bg-body)
+}
+
+/* Clases destacadas */
+
+#cdestacadas{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 70px 0 100px;
+}
+
+#cdestacadas h2{
+    font-size: var(--fontSize-title);
+    color: #ffff;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#cdestacadas h2::after{
+    width: 60%;
+    height: 4px;
+    background: #ffff;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 46%;
+}
+
+#cdestacadas .card-destacadas{
+    background: #292c36;
+    border-radius: 4px;
+    position: relative;
+}
+
+#cdestacadas .card-destacadas img{
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+#cdestacadas .card-destacadas .cont-info{
+    background: #292c36;
+    padding: 14px;
+    border-radius: 0 0 4px 4px;
+    transition: .4s;
+}
+
+#cdestacadas .card-destacadas .cont-info:hover{
+    background: var(--primary-color);
+}
+
+#cdestacadas .card-destacadas .cont-info h3{
+    font-size: 25px;
+    color:#ffff ;
+    font-weight: 600;
+}
+
+#cdestacadas .card-destacadas .cont-info p{
+    color: #c6c6c6;
+    font-size: 16px;
+}
